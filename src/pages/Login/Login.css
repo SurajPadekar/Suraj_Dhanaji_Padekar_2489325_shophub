@@ -1,0 +1,158 @@
+.login-page {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Left brand panel */
+.brand-panel {
+  flex: 1;
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
+  color: #fff;
+  padding: 50px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.brand-logo {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+.brand-panel h1 {
+  font-size: 32px;
+  margin-bottom: 14px;
+  line-height: 1.2;
+}
+
+.brand-panel p {
+  font-size: 14px;
+  opacity: 0.8;
+  line-height: 1.6;
+}
+
+/* Right form panel */
+.form-panel {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  background: #fff;
+}
+
+.form-box {
+  width: 100%;
+  max-width: 360px;
+}
+
+.form-box h2 {
+  font-size: 22px;
+  margin-bottom: 4px;
+}
+
+.form-sub {
+  font-size: 13px;
+  color: #999;
+  margin-bottom: 24px;
+}
+
+.form-box label {
+  display: block;
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 4px;
+  margin-top: 14px;
+}
+
+.form-box input[type="email"],
+.form-box input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.field-err {
+  color: #dc2626;
+  font-size: 12px;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 14px 0;
+  font-size: 13px;
+}
+
+.remember {
+  color: #666;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.forgot {
+  color: #2563eb;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 11px;
+  background: #2563eb;
+  color: #fff;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.or-text {
+  text-align: center;
+  color: #ccc;
+  margin: 16px 0;
+  font-size: 13px;
+}
+
+.signup-text {
+  text-align: center;
+  font-size: 13px;
+  color: #999;
+}
+
+.error-msg {
+  background: #fef2f2;
+  color: #dc2626;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.demo-box {
+  text-align: center;
+  margin-top: 16px;
+  padding: 10px;
+  background: #eff6ff;
+  border-radius: 6px;
+  font-size: 12px;
+  color: #666;
+}
+
+.demo-box strong {
+  color: #2563eb;
+}
+
+@media (max-width: 640px) {
+  .login-page {
+    flex-direction: column;
+  }
+  .brand-panel {
+    padding: 30px 20px;
+  }
+  .brand-panel h1 {
+    font-size: 22px;
+  }
+}
