@@ -1,70 +1,70 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# ShopHub
 
-## Available Scripts
+ShopHub is a React-based e-commerce storefront built with Create React App. It fetches products from the Fake Store API, supports login with demo credentials, lets users browse product categories, add items to a cart, and view a protected cart page with an order summary.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- Login page with demo credentials
+- Products page that loads items from `https://fakestoreapi.com/products`
+- Category filtering and product listing
+- Add-to-cart functionality with quantity controls
+- Protected cart page only accessible after login
+- Cart summary with subtotal, tax estimate, and total
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Demo Credentials
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Email: `demo@shop.com`
+- Password: `demo123`
 
-### `npm test`
+## Setup
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone the repository
+	```bash
+	git clone <repository-url>
+	cd Suraj_Dhanaji_Padekar_2489325_shophub
+	```
+2. Install dependencies
+	```bash
+	npm install
+	```
+3. Start the development server
+	```bash
+	npm start
+	```
+4. Open the app at
+	```bash
+	http://localhost:3000
+	```
 
-### `npm run build`
+## Build for Production
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+npm run build
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Environment Variables
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+This project does not require any additional environment variables to run locally. The app uses the public Fake Store API for product data.
 
-### `npm run eject`
+If you want to configure a custom API endpoint in the future, create a `.env` file at the project root and add variables like:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```env
+REACT_APP_API_URL=https://your-api-endpoint.com
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Deployed App
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Deployed app: `https://REPLACE_WITH_DEPLOYED_APP_URL`
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+> Replace the URL above with the actual deployed site once available.
 
-## Learn More
+## Repository
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+GitHub repo: `https://github.com/SurajPadekar/Suraj_Dhanaji_Padekar_2489325_shophub`
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Notes
 
-### Code Splitting
+- The cart page is protected and redirects to login if the user is not authenticated.
+- Login state is stored in browser `localStorage` using a simple demo token.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
